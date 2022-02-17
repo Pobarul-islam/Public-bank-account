@@ -29,7 +29,7 @@
 }
 .box img{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 .heading-title{
     font-size: 50px;
@@ -44,11 +44,12 @@
      height: 45%;
     
 }
-/* .box1{
-    background-image: url(/img/money.jpg);
+ .box1{
+    
     background-repeat: no-repeat;
+  
    
-}  */
+}  
 .box2 .form{
     display: flex;
     align-items: center;
@@ -164,6 +165,8 @@ span{
             
         }
 
+      
+
         .box{
             width: 90%;
             padding: 20px;
@@ -174,6 +177,7 @@ span{
         .box img{
             width: 100%;
             height: 300px;
+          
            
         }
         .form p , .save p ,.box p{
@@ -181,10 +185,14 @@ span{
             font-size: 18px;
         }
         .box1{
-            background-image: url(/images/cash-money.jpg);
+         
             height: 250px;
             background-size: cover;
             background-position: center;
+              background-repeat: no-repeat;
+        }
+        .box2{
+            margin-top: 100px;
         }
         .error-box{
             width: 90%;
