@@ -3,19 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* google Font Link  */
 
-/* Gloval style  */
+/* body style  */
 *{
     margin: 0 ;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-/* Gloval style  */
+
+
 .space-10px{
     height: 10px;
 }
-/*=========================================
-        All style Start here
-    =========================================*/
+/* All style Start here  */
+
 .box-container{
     width: 80%;
     margin: 0 auto;
@@ -24,6 +24,7 @@
 }
 .box{
     width: 45%;
+   
 
 }
 .box img{
@@ -37,16 +38,16 @@
     text-align: center;
 }
 .box2{
-    background-color: #ececec;
+    background-color: lightgray;
     padding: 50px;
     width: 40%;
+     height: 45%;
     
 }
 .box1{
-    background-image: url(/images/desktop.jpeg);
-    height: auto;
-    background-size: cover;
-    background-position: center;
+    background-image: url(/img/money.jpg);
+    background-repeat: no-repeat;
+   
 }
 .box2 .form{
     display: flex;
@@ -112,14 +113,10 @@ span{
 .save h1{
     padding: 0px 10px 0px 10px;
 }
+/* All style Start here  */
 
-/*=========================================
-        All style Start here
-    =========================================*/
+       /* Error Box  */
 
-    /*=========================================
-        Error Box 
-    =========================================*/
     .error-box{
         width: 400px;
         
@@ -198,4 +195,4 @@ span{
 
         /* End Here  */
       }
-      /* End Here  */
+     /* End Here  */ 

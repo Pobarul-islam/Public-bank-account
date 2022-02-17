@@ -1,6 +1,4 @@
-/*===============================================
-        Import All Id And converted on Variable
-    ============================================*/
+//  Import All Id And converted on Variable 
 
 const btnCalculate = document.getElementById("calculate");
 const income = document.getElementById("income");
@@ -21,32 +19,25 @@ const youHave = document.getElementById("youhave");
 const myIncome = parseInt(income.value); //my income Fer Month
 
 btnCalculate.addEventListener("click", calculateHandler); // Added EventListener on Calculate Button .
-/*=========================================
-        Error Handler  Function Start
-    =========================================*/
+ 
+    // Error Handler  Function Start 
 function errorHandler(var1, var2) {
   document.getElementById(var1).style.display = "flex";
   document.getElementById(var2).style.display = "block";
   return;
 }
-/*=========================================
-        Error Handler  Function End
-    =========================================*/
-/*=========================================
-        First  Function Start
-    =========================================*/
+    // Error Handler  Function End 
+//  First  Function Start 
 
 function calculateHandler() {
-  /*=========================================
-        converting value string to  number 
-    =========================================*/
+
+    //  converting value string to  number 
+
   const spendForFood = parseInt(food.value); // For Food Value
   const spendForRent = parseInt(rent.value); //For Rent value
-  const spendForClothse = parseInt(clothes.value); // clothes.value
-
-  /*=========================================
-                 total summery 
-    =========================================*/
+    const spendForClothse = parseInt(clothes.value); // clothes.value
+    
+    // total summery 
 
   const totoalSpend = spendForFood + spendForClothse + spendForRent; //total spend money
 
@@ -66,21 +57,14 @@ function calculateHandler() {
   }
   thisIsError();
 }
+//  First  Function End  
 
-/*=========================================
-        First  Function End 
-    =========================================*/
-
-/*=========================================
-        second Function for second part Start 
-    =========================================*/
+//   second Function for second part Start 
 
 save.addEventListener("click", saveMoney); // adding eventListener On save Button ..
 
 function saveMoney() {
-  /*=========================================
-        converting value string to  number 
-    =========================================*/
+// converting value string to  number  
 
   const myIncome = parseInt(income.value);
   const numpersent = parseInt(persent.value);
@@ -88,11 +72,9 @@ function saveMoney() {
 
   let persentage = myIncome / 100;
 
-  const finulSaveAmmount = persentage * numpersent;
-
-  /*=========================================
-        Error Handler 
-    =========================================*/
+    const finulSaveAmmount = persentage * numpersent;
+    
+//    Error Handler  
 
   if (finulSaveAmmount <= balanceNew) {
     saveAmount.innerText = finulSaveAmmount;

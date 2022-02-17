@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monthly Expenses</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Public bank account</title>
+
+    <!-- Fontawesome link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -13,6 +14,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- bootstrap css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Coustom css link  -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -33,88 +45,82 @@
         </p>
       </div>
     </div>
-    <!-- =========================================
-                Main Section Start Here
-        ========================================= -->
+    <!-- Main Section Start Here  -->
 
-        <!-- picture Section  -->
+        <h1 class="heading-title">Public Bank Account</h1>
      
- 
-    <section class="main">
-      <h1 class="heading-title">Monthly Expenses</h1>
-      <!-- =========================================
-                box-container Start Here
-        ========================================= -->
-      <div class="box-container">
-        <!-- box 1 start Here  -->
-        <div class="box box1"></div>
-        <!-- box 1 end here  -->
-        <!-- box-2 start here  -->
-        <div class="box box2">
-          <h1>Income</h1>
-          <!-- form start  -->
-          <div class="form">
-            <p>income</p>
-            <input type="text" id="income" value="20000" />
-          </div>
-          <!-- form End  -->
-          <div class="section-2">
-            <h1>Expenses</h1>
+                <!-- box-container Start -->
+      
+        <div class="box-container">
+          <!-- box 1 start Here  -->
+          <div class="box box1"></div>
+          <!-- box 1 end here  -->
+          <!-- box-2 start here  -->
+          <div class="box box2">
+            <h1>Income</h1>
             <!-- form start  -->
             <div class="form">
-              <p>Food</p>
-              <input type="text" id="food" value="5000" />
+              <p>income</p>
+              <input type="text" id="income" value="20000" />
             </div>
             <!-- form End  -->
-            <!-- form start  -->
-            <div class="form">
-              <p>Rent</p>
-              <input type="text" id="rent" value="5000" />
+            <div class="section-2">
+              <h1>Expenses</h1>
+              <!-- form start  -->
+              <div class="form">
+                <p>Food</p>
+                <input type="text" id="food" value="5000" />
+              </div>
+              <!-- form End  -->
+              <!-- form start  -->
+              <div class="form">
+                <p>Rent</p>
+                <input type="text" id="rent" value="5000" />
+              </div>
+              <!-- form End  -->
+              <!-- form start  -->
+              <div class="form">
+                <p>Clothees</p>
+                <input type="text" id="clothees" value="4000" />
+              </div>
+             <!-- box-container End -->
+
+
+
+           <!-- Account section start -->
             </div>
-            <!-- form End  -->
-            <!-- form start  -->
-            <div class="form">
-              <p>Clothees</p>
-              <input type="text" id="clothees" value="4000" />
+            <button id="calculate" class="calculate">Calculate</button>
+            <div class="content">
+              <h3>Total Expreses: <span id="totoal-exprese">0</span></h3>
+              <h3>Balance:<span id="balance">0</span></h3>
             </div>
-            <!-- form End  -->
 
-            
-            <!-- =========================================
-                Second fart Start 
-        ========================================= -->
-          </div>
-          <button id="calculate" class="calculate">Calculate</button>
-          <div class="content">
-            <h3>Total Expreses: <span id="totoal-exprese">0</span></h3>
-            <h3>Balance:<span id="balance">0</span></h3>
-          </div>
+            <div class="save">
+              <p>Save</p>
+              <input type="text" id="persent" value="20" />
+              <h1>%</h1>
+              <button id="save">Save</button>
+            </div>
 
-          <div class="save">
-            <p>Save</p>
-            <input type="text" id="persent" value="20" />
-            <h1>%</h1>
-            <button id="save">Save</button>
+            <p>Save Amount:<span id="save-amount">0</span></p>
+            <div class="space-10px"></div>
+            <p>Remaining Balance:<span id="rem-balance"> 0</span></p>
           </div>
-
-          <p>Save Amount:<span id="save-amount">0</span></p>
-          <div class="space-10px"></div>
-          <p>Remaining Balance:<span id="rem-balance"> 0</span></p>
+        <!-- box end Here  -->
         </div>
-        <!-- =========================================
-                   Box 2 End Here
-        ========================================= -->
-      </div>
-      <!-- =========================================
-                box-container End Here
-        ========================================= -->
-    </section>
+         <!-- box-container End Here  -->
+    
+  
+        <!-- Main Section End Here  -->
 
-    <!-- =========================================
-                Main Section End Here
-    ========================================= -->
 
-    <!-- jfasfjawfj  -->
+
+    <!-- bootstrap js link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- javascript code link  -->
     <script src="js/app.js"></script>
