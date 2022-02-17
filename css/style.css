@@ -44,11 +44,11 @@
      height: 45%;
     
 }
-.box1{
+/* .box1{
     background-image: url(/img/money.jpg);
     background-repeat: no-repeat;
    
-}
+}  */
 .box2 .form{
     display: flex;
     align-items: center;
